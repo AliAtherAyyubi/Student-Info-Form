@@ -1,0 +1,38 @@
+body{
+    background-color: rgb(229, 220, 247);
+  }
+    h1{
+        text-align: center;
+        margin-top: 1.2em;
+        font-size: 3.3em;
+        color: rgb(233, 76, 76);
+    }
+    h2{
+      color: rgb(13, 80, 235);
+      margin-top: 1cm;
+      margin-left: 50px;
+      font-weight: bold;
+      font-size: 2.1em;
+    }
+    .name{
+      text-transform: uppercase;
+      color: rgb(11, 118, 205);
+    }
+    .container{
+        overflow: scroll;
+        margin-top: 1cm;
+        /* border-radius: 220px; */
+    }
+    .table{
+      background-color: rgb(242, 241, 241);
+      border-radius: 10px;
+      /* box-shadow: 0px 1px 30px gray; */
+      overflow: hidden;
+    }
+    th{color: white;font-size: 1.2em;}
+    .bg{
+        background-color: rgb(17, 6, 230);
+    }
+    td{
+        font-size: 1.1em;
+    }

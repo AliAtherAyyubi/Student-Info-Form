@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Anybody:wght@400;600&family=Poppins:wght@300;500;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: content-box;
+}
+body {
+  font-family: "Anybody", cursive;
+  font-family: "Poppins", sans-serif;
+
+  /* backdrop-filter: brightness(10px); */
+  /* -webkit-backdrop-filter: brightness(-100px); */
+  /* -webkit-filter: blur(5px); */
+}
+.homebox {
+  height: 120vh;
+  background: url("../icons/susan-q-yin-2JIvboGLeho-unsplash.jpg");
+  /* background-attachment: fixed; */
+  background-position: center;
+  background-size: cover;
+  /* background-repeat: no-repeat; */
+}
+
+#heading {
+  text-align: center;
+  margin: auto;
+  /* margin-top: 20px; */
+  /* margin-bottom: ; */
+  font-weight: bold;
+  font-size: 4em;
+  color: rgb(0, 255, 89);
+  max-width: 800px;
+  text-shadow: 0px 5px 20px rgb(115, 115, 115);
+}
+
+.crudbox {
+  padding: 10px;
+  position: relative;
+  margin: auto;
+  max-width: 410px;
+  height: 500px;
+  box-shadow: 0px 2px 30px rgb(170, 170, 170);
+  border-radius: 10px;
+  background-color: rgb(243, 243, 243);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1cm;
+}
+.crudbox h1 {
+  text-align: center;
+  color: green;
+  font-size: 3em;
+  margin-top: 20px;
+}
+.crudbox .icon {
+  margin-top: 0px;
+  height: 250px;
+  /* margin-top: 1px; */
+  opacity: 0.5;
+}
+.btn-box {
+  display: flex;
+  /* display: block; */
+  justify-content: space-around;
+
+  /* border: 1px solid; */
+  /* /* float: left; */
+  position: absolute;
+  bottom: 50px;
+}
+.crudbox .btn-box .btn {
+  background-color: rgb(225, 98, 70);
+  color: white;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* width: 80px; */
+  height: 50px;
+  font-weight: 600;
+  font-size: 1.2em;
+  margin: 10px 10px;
+  transition: 0.5s ease;
+  border-radius: 10px;
+  /* display: inline-block; */
+}
+
+.crudbox .btn:hover {
+  background-color: rgb(150, 48, 48);
+
+  color: white;
+}

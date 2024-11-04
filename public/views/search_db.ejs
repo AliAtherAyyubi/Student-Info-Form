@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../bootstrap-5.2.1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../bootstrap-5.2.1-dist/js/bootstrap.min.js">
+    <link rel="stylesheet" href="../CSS/alert.css">
+    <title>Student Portal</title>
+</head>
+<style>
+    body{
+        background-color: rgb(148, 52, 196);
+        overflow-x: hidden;
+    }
+    input::-webkit-outer-spin-button,input::-webkit-inner-spin-button{
+        -webkit-appearance: none;margin: 0;
+    }
+    .searchbox{
+        background-color: rgb(184, 175, 141);
+        margin: 5cm auto;
+        box-shadow: 0px 2px 20px gray;
+        border-radius: 10px;
+        padding: 10px 10px;
+        min-height: 250px; width: 500px;
+        display: flex;justify-content: center;
+        position: relative;
+    }
+    label{
+        font-size: 1.3em;
+        color: rgb(16, 16, 16);
+        font-weight: bold;
+    }
+    .row{
+        position: absolute;
+        left: 0px;top: 70px;
+    }
+    .inputbox{
+        display: flex;
+        flex-direction: row;
+        
+    }
+    .flex{
+        width: 150px;
+        margin-left: 10px;
+        margin-top: 10px;
+        /* margin: 10px 0; */
+    }
+    .btn{
+        width: 200px;
+        height: 40px;
+        margin: 50px auto;
+    }
+</style>
+<body>
+
+    <% if(error){ %>
+        <div class="alertbox" id="alert-warning">
+            <div class="alert warning">
+                <i class="fa-solid fa-xmark closebtn close" id="btn1"></i>
+                
+                <div class="content">
+                    <div class="icon-box" id="success">
+                        <i class="fa-solid fa-circle-exclamation alert-icon warn-icon"></i>
+                    </div>
+                    <p class="msg"><%= msg %></p>
+                </div>
+                
+            </div>
+        </div>
+        <% } %>
+    <div class="searchbox container">
+
+        <form action="/search" method="post">
+            <label for="">Enter your Roll No *(0000)</label>
+            <div class="form row">
+                
+            <div class="inputbox">
+            
+                <input type="number" class="form-control flex" id="rollno"
+                placeholder="Roll Number"
+                name="rollno"
+                maxlength="4"
+                required>
+
+                <select class="select form-control flex" id="major"
+                    name="major" required>
+                      <option hidden>Choose Major</option>
+                      <option>BSCS</option>
+                        <option>BSIT</option>
+                                <option>BSSE</option>
+                                <option>BA</option>
+                                <option>BB</option>
+                                <option>B.Ed</option>
+                                <option>BE</option>
+                                <option>B.Comp.E</option>
+                    </select>
+                <select class="select form-control flex" id="year"
+                    name="year" required>
+                      <option hidden>Choose Year</option>
+                      <option>2022</option>
+                                <option>2021</option>
+                                <option>2020</option>
+                                <option>2019</option>
+                                <option>2018</option>
+                                <option>2016</option>
+                                <option>2015</option>
+                                <option>2014</option>
+                </select>
+                </div>
+
+                
+                <input type="submit" class="btn btn-primary" id="submit">
+            </div>
+        </form>
+        
+    </div>
+
+    <script src="../JS/alert.js"></script>
+    <script src="https://kit.fontawesome.com/b87ca70252.js" crossorigin="anonymous"></script>
+
+</body>
+</html>

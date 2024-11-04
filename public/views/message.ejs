@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../bootstrap-5.2.1-dist/css/bootstrap.min.css">
+    <title>Error Page</title>
+</head>
+<style>
+  body{
+    background-color: rgb(172, 223, 240);
+  }
+  .container{
+    /* border: 1px solid white; */
+    border-radius: 10px;
+    box-shadow: 0px 2px 20px gray;
+    padding: 20px;
+    background-color: rgb(213, 160, 90);
+  }
+  .home{
+    margin-left: 10px;
+  }
+  .links .btn{
+    background-color: blueviolet;
+    color: white;border: none;
+  }
+  .links .btn:hover{
+    color: white;
+    background-color: rgb(111, 37, 181);
+  }
+</style>
+<body>
+    <div class="container mt-5">
+      <h1>{{msg}}</h1>
+      <div class="alertbox" id="alert-warning">
+        <div class="alert warning">
+            <i class="fa-solid fa-xmark closebtn btn" id="btn1"></i>
+            
+            <div class="content">
+                <div class="icon-box" id="success">
+                    <i class="fa-solid fa-circle-exclamation alert-icon warn-icon"></i>
+                </div>
+                <p class="msg"><%= msg %></p>
+            </div>
+            
+        </div>
+    </div>
+
+      <div class="links mt-5">
+        <a href="/view" class="btn">Go Back</a>
+              <a href="/home" class="btn home btn-primary">Go to Homepage</a>
+      </div>
+        
+    </div>
+</body>
+</html>
